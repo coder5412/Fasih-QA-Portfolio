@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -192,5 +192,202 @@
 
 
 <script src="{{ url_for("static", filename="js/app.js") }}"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Fasih ur Rehman — Software Quality Assurance Engineer portfolio. Manual testing, API testing, Postman, Selenium, SQL and AI-powered projects.">
+<title>Fasih ur Rehman | QA Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<nav>
+  <a href="#home" class="logo">FASIH UR <span>REHMAN</span></a>
+  
+  <div class="navlinks" id="navlinks">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#approach">QA Approach</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#ai">AI Lab</a><a href="#contact">Contact</a>
+  </div>
+  <button class="menu" id="menu">☰</button>
+</nav>
+
+<main>
+<section class="hero" id="home">
+ <div class="container hero-grid">
+  <div class="reveal">
+   <div class="eyebrow"><span class="dot"></span> AVAILABLE FOR QA / SQA OPPORTUNITIES</div>
+   <h1>Software Quality<br><span class="gradient">Assurance Engineer.</span></h1>
+   <p>I’m Fasih ur Rehman, a Software Engineering graduate focused on software testing, API validation and quality engineering — building reliable, user-focused software with a strong interest in AI-powered products.</p>
+   <div class="hero-actions"><a class="btn btn-primary" href="#projects">Explore My Work ↗</a><a class="btn" href="#contact">Let's Connect</a><a class="btn" href="{{ url_for('static', filename='files/Fasih_ur_Rehman_Resume_SE.pdf') }}" download>Download CV ↓</a></div>
+   <div class="hero-meta"><div><b>API + UI</b>Testing Focus</div><div><b>Agile</b>Workflow</div></div>
+  </div>
+  <div class="hero-visual reveal">
+   <div class="photo-wrap">
+    <div class="photo-glow"></div>
+    <div class="scan"></div>
+    <img 
+    class="photo" 
+    src="{{ url_for('static', filename='images/hero-qa.png') }}" 
+    alt="Fasih ur Rehman - Software Quality Assurance Engineer"
+    style="border: none !important; outline: none !important; box-shadow: none !important;">
+    <div class="floating-badge badge-one"><span>✓</span> API Tested</div>
+    <div class="floating-badge badge-two"><span>◈</span> QA Focus</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="about"><div class="container">
+ <div class="section-head reveal"><div class="kicker">01 — Profile</div><h2>Quality is not a final step.<br>It’s an engineering mindset.</h2><p class="sub">My focus is finding defects early, validating requirements, testing real user workflows and helping teams ship reliable software.</p></div>
+ <div class="cards">
+  <article class="card reveal"><div class="icon">⌁</div><h3>Test Strategy</h3><p>Functional, regression, integration and workflow testing with structured test-case design and defect reporting.</p><div class="tags"><span class="tag">Manual QA</span><span class="tag">STLC</span><span class="tag">SDLC</span></div></article>
+  <article class="card reveal"><div class="icon">⌘</div><h3>API Quality</h3><p>REST API validation using Postman, including response checks, workflows and backend behavior verification.</p><div class="tags"><span class="tag">Postman</span><span class="tag">REST</span><span class="tag">JSON</span></div></article>
+  <article class="card reveal"><div class="icon">◎</div><h3>Data Validation</h3><p>Database validation and query-based checks using SQL across MySQL, PostgreSQL and SQLite.</p><div class="tags"><span class="tag">SQL</span><span class="tag">MySQL</span><span class="tag">PostgreSQL</span></div></article>
+ </div>
+</div></section>
+
+<section id="skills"><div class="container">
+ <div class="section-head reveal"><div class="kicker">02 — Toolkit</div><h2>QA stack, built for real products.</h2><p class="sub">A practical mix of testing, automation basics, programming and backend knowledge.</p></div>
+ <div class="skill-grid">
+  <div class="skill reveal"><div class="skill-top"><span>Manual / Functional Testing</span><span>90%</span></div><div class="bar"><i style="--w:90%"></i></div></div>
+  <div class="skill reveal"><div class="skill-top"><span>API Testing — Postman</span><span>88%</span></div><div class="bar"><i style="--w:88%"></i></div></div>
+  <div class="skill reveal"><div class="skill-top"><span>SQL / Database Validation</span><span>82%</span></div><div class="bar"><i style="--w:82%"></i></div></div>
+  <div class="skill reveal"><div class="skill-top"><span>Selenium</span><span>62%</span></div><div class="bar"><i style="--w:62%"></i></div></div>
+  <div class="skill reveal"><div class="skill-top"><span>Python / Java / JavaScript</span><span>76%</span></div><div class="bar"><i style="--w:76%"></i></div></div>
+  <div class="skill reveal"><div class="skill-top"><span>Agile / Scrum / STLC</span><span>86%</span></div><div class="bar"><i style="--w:86%"></i></div></div>
+ </div>
+</div></section>
+
+<section id="approach">
+ <div class="container">
+  <div class="section-head reveal">
+   <div class="kicker">03 — QA Approach</div>
+   <h2>From requirement to release,<br>I test the whole journey.</h2>
+   <p class="sub">A structured quality workflow that combines requirement understanding, test design, execution, defect communication and verification.</p>
+  </div>
+
+  <div class="workflow">
+   <article class="workflow-card reveal">
+    <span class="step">01</span><div class="workflow-icon">⌕</div>
+    <h3>Understand</h3>
+    <p>Review requirements, user flows, acceptance criteria and risk areas before execution begins.</p>
+    <div class="tags"><span class="tag">Requirements</span><span class="tag">User Flows</span></div>
+   </article>
+   <article class="workflow-card reveal">
+    <span class="step">02</span><div class="workflow-icon">✓</div>
+    <h3>Design Tests</h3>
+    <p>Create structured test cases and scenarios covering positive, negative, edge and regression paths.</p>
+    <div class="tags"><span class="tag">Test Cases</span><span class="tag">STLC</span></div>
+   </article>
+   <article class="workflow-card reveal">
+    <span class="step">03</span><div class="workflow-icon">⚡</div>
+    <h3>Execute & Report</h3>
+    <p>Run functional, API, integration and UI checks, then document defects with clear reproduction details.</p>
+    <div class="tags"><span class="tag">Postman</span><span class="tag">Bug Reports</span></div>
+   </article>
+   <article class="workflow-card reveal">
+    <span class="step">04</span><div class="workflow-icon">↻</div>
+    <h3>Verify & Protect</h3>
+    <p>Retest fixes and perform regression checks so new changes do not break existing functionality.</p>
+    <div class="tags"><span class="tag">Retesting</span><span class="tag">Regression</span></div>
+   </article>
+  </div>
+
+  <div class="coverage-head reveal">
+   <div><div class="kicker">Testing Coverage</div><h3>What I focus on</h3></div>
+   <span>Quality across the product lifecycle</span>
+  </div>
+  <div class="coverage-grid">
+   <div class="coverage reveal"><b>01</b><strong>Functional</strong><span>Requirements, workflows & business logic</span></div>
+   <div class="coverage reveal"><b>02</b><strong>API</strong><span>REST endpoints, responses & JSON validation</span></div>
+   <div class="coverage reveal"><b>03</b><strong>Regression</strong><span>Protect existing features after changes</span></div>
+   <div class="coverage reveal"><b>04</b><strong>Integration</strong><span>Validate communication between components</span></div>
+   <div class="coverage reveal"><b>05</b><strong>Database</strong><span>SQL queries, records & data consistency</span></div>
+   <div class="coverage reveal"><b>06</b><strong>UI / Usability</strong><span>Real user flows and interface behavior</span></div>
+  </div>
+ </div>
+</section>
+
+<section id="experience"><div class="container">
+ <div class="section-head reveal"><div class="kicker">04 — Experience</div><h2>Where I learned to ship with confidence.</h2></div>
+ <div class="timeline">
+  <article class="t-item reveal"><div class="t-date">Sep 2025 — Nov 2025</div><h3>SEO Intern · TechStep Solutions</h3><p>Conducted website quality analysis, usability/performance checks and validation after content updates; monitored website performance with analytical tools.</p></article>
+  <article class="t-item reveal"><div class="t-date">Sep 2024 — Dec 2024</div><h3>Intern Software Engineer · Codignize Solution</h3><p>Assisted with web application development and testing, executed functional checks, documented defects, tested REST APIs in Postman and collaborated with developers during Agile sprints.</p></article>
+ </div>
+ <div class="experience-grid">
+  <div class="experience-panel reveal">
+   <div class="panel-label">Core QA Work</div>
+   <ul>
+    <li>Functional and workflow validation</li>
+    <li>REST API testing with Postman</li>
+    <li>Defect identification and reporting</li>
+    <li>Usability and performance checks</li>
+   </ul>
+  </div>
+  <div class="experience-panel reveal">
+   <div class="panel-label">Engineering Foundation</div>
+   <ul>
+    <li>Python, Java and JavaScript</li>
+    <li>Spring / Spring Boot / Flask</li>
+    <li>SQL, MySQL, PostgreSQL and SQLite</li>
+    <li>Agile, Scrum, SDLC and STLC</li>
+   </ul>
+  </div>
+ </div>
+</div></section>
+
+<section id="projects"><div class="container">
+ <div class="section-head reveal"><div class="kicker">05 — Selected Work</div><h2>Projects where QA meets engineering.</h2></div>
+ <div class="project">
+  <article class="card reveal"><div class="qa-visual"><div class="qa-top"><i></i><i></i><i></i></div><div class="qa-body"><div class="qa-side"><span></span><span></span><span></span></div><div class="qa-main"><div class="qa-line"></div><div class="qa-line short"></div><div class="qa-line"></div></div></div><div class="qa-check">✓ AI workflow validated</div></div><div class="project-num">01 / AI + MOBILE</div><h3>Real-Time Gesture to Voice Converter</h3><p>Final Year Project. Tested an AI-based mobile application that converts sign language gestures into text and speech. Designed test cases, tested APIs with Postman and validated usability, workflows and response accuracy.</p><div class="tags"><span class="tag">AI</span><span class="tag">Mobile</span><span class="tag">API Testing</span><span class="tag">Postman</span></div></article>
+  <article class="card reveal"><div class="qa-visual"><div class="qa-top"><i></i><i></i><i></i></div><div class="qa-body"><div class="qa-side"><span></span><span></span><span></span></div><div class="qa-main"><div class="qa-line"></div><div class="qa-line short"></div><div class="qa-line"></div></div></div><div class="qa-check">✦ NLP + duplicate detection</div></div><div class="project-num">02 / AI PRODUCT</div><h3>Contact Manager-AI</h3><p>An AI-powered contact management system with natural-language search, duplicate detection, smart categorization, NLP queries and predictive tagging through a secure RESTful architecture.</p><div class="tags"><span class="tag">NLP</span><span class="tag">REST</span><span class="tag">AI</span><span class="tag">Backend</span></div></article>
+  <article class="card reveal"><div class="qa-visual"><div class="qa-top"><i></i><i></i><i></i></div><div class="qa-body"><div class="qa-side"><span></span><span></span><span></span></div><div class="qa-main"><div class="qa-line"></div><div class="qa-line short"></div><div class="qa-line"></div></div></div><div class="qa-check">✓ REST API tested</div></div><div class="project-num">03 / BACKEND</div><h3>Ecommerce Backend System</h3><p>Java Spring Boot backend with authentication, product management, cart and order processing. REST APIs were tested with Postman with emphasis on scalable and clean implementation.</p><div class="tags"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">REST API</span><span class="tag">Postman</span></div></article>
+  <article class="card reveal"><div class="qa-visual"><div class="qa-top"><i></i><i></i><i></i></div><div class="qa-body"><div class="qa-side"><span></span><span></span><span></span></div><div class="qa-main"><div class="qa-line"></div><div class="qa-line short"></div><div class="qa-line"></div></div></div><div class="qa-check">✓ Dashboard quality</div></div><div class="project-num">04 / EDTECH</div><h3>Taleem Wallet</h3><p>A scholarship platform connecting students with verified funding opportunities through a merit-based system, with dashboards for providers to manage scholarships and applications.</p><div class="tags"><span class="tag">Web App</span><span class="tag">Dashboard</span><span class="tag">Quality</span></div></article>
+ </div>
+</div></section>
+
+<section id="ai"><div class="container">
+ <div class="section-head reveal"><div class="kicker">06 — AI Lab</div><h2>Ask my QA assistant.</h2><p class="sub">A real AI assistant connected to Google's Gemini API. Responses are generated in real time.</p></div>
+ <div class="ai-box">
+  <div class="ai-intro reveal"><div class="icon">✦</div><h3>Fasih QA Copilot</h3><p style="color:var(--muted);margin-top:10px">Try the quick prompts or type your own question. Ask about my QA skills, testing workflow, experience, projects or suitability for a QA role.</p><div class="tags"><span class="tag">QA Assistant</span><span class="tag">Local Demo</span><span class="tag">Interactive</span></div></div>
+  <div class="ai-chat reveal">
+   <div class="chat-head"><span class="orb"></span><strong>QA Copilot</strong><span style="color:#6e7b91;font-size:11px;margin-left:auto"><span id="aiStatus">live AI</span></span></div>
+   <div class="messages" id="messages"><div class="msg bot">Hi! I’m Fasih’s QA Copilot. Ask me about his testing skills, experience, projects or why he’s a good QA candidate.</div></div>
+   <div class="quick"><button data-q="What are Fasih's main QA skills?">QA skills</button><button data-q="Tell me about his experience.">Experience</button><button data-q="What is his FYP?">FYP</button><button data-q="Why should we hire Fasih?">Why hire?</button></div>
+   <div class="chat-input"><input id="chatInput" placeholder="Ask something about Fasih..." /><button id="send">Send</button></div>
+  </div>
+ </div>
+</div></section>
+
+<section id="education"><div class="container">
+ <div class="section-head reveal"><div class="kicker">07 — Education</div><h2>Software Engineering foundation.</h2></div>
+ <div class="card reveal"><div class="project-num">OCT 2022 — JUN 2026</div><h3 style="font-size:24px;margin:8px 0">DHA Suffa University</h3><p>Bachelor of Software Engineering (BSSE) · </p><p style="margin-top:12px">Foundation in software engineering, databases, object-oriented programming, web technologies and software testing, strengthened through practical projects and Agile collaboration.</p></div>
+</div></section>
+
+<section id="contact"><div class="container">
+ <div class="section-head reveal"><div class="kicker">08 — Contact</div><h2>Let’s build better software.</h2><p class="sub">Open to QA / SQA opportunities where testing, engineering and problem-solving can create measurable product quality.</p></div>
+ <div class="contact">
+  <div class="contact-card reveal"><h3>Reach out</h3>
+   <div class="contact-row">✉️ <div><span>Email</span><b>fasihur54@gmail.com</b></div></div>
+   <div class="contact-row">📱 <div><span>Phone</span><b>0332 3646064</b></div></div>
+   <div class="contact-row">💼 <div><span>LinkedIn</span><b>fasih-ur-rehman-636784286</b></div></div>
+   <div class="contact-row">⌘ <div><span>GitHub</span><b>coder5412</b></div></div>
+  </div>
+  <div class="contact-card reveal"><h3>QA mindset</h3><p style="color:var(--muted);margin:12px 0 22px">“Find the risk. Reproduce the issue. Communicate it clearly. Verify the fix. Protect the user.”</p><a class="btn btn-primary" href="mailto:fasihur54@gmail.com">Email Me ↗</a> <a class="btn" href="{{ url_for('static', filename='files/Fasih_ur_Rehman_Resume_SE.pdf') }}" download>Download CV ↓</a></div>
+ </div>
+</div></section>
+</main>
+<footer>© 2026 Fasih ur Rehman · Software Quality Assurance Engineer · Built with HTML, CSS & JavaScript</footer>
+
+
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
 </body>
 </html>
